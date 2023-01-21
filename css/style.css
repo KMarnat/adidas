@@ -135,11 +135,12 @@ small, .text_small {font-size: 0.75rem;}
 
 
 /* GLOBAL STYLES */
-
+a {
+  text-decoration: none;
+}
 .btn {
     padding: 8px 16px;
     color: #363636;
-    text-decoration: none;
 }
 
 .btn-primary {
@@ -259,11 +260,123 @@ nav a {
     border: none;
 }
 
+#header {
+  margin-top: 0;
+}
+
+.shop {
+  padding: 4em 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  url(https://images.unsplash.com/photo-1527090526205-beaac8dc3c62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #000000;
+  outline: none;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  color: rgb(185, 185, 185);
+}
+
+::-webkit-input-placeholder {
+  color: rgb(185, 185, 185);
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.shopper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.shop-grid {
+  background-color: white;
+  border-radius: 4px;
+  padding: 2em;
+}
+
+.shop-grid div a {
+
+}
+
+.side-nav {
+  flex-direction: column;
+}
+
+.gray-a {
+  color: gray;
+}
+.side-nav a {
+  color: rgb(185, 185, 185);
+  font-size: 1.2em;
+  margin: 1em 0;
+  padding: 0 1em;
+  transition: 0.5s;
+
+}
+
+.side-nav .loaded {
+  color: white;
+  font-size: 1.4em;
+  margin: 2em 0;
+}
+
+.side-nav a:hover {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.gray {
+  color: gray;
+}
+
+.gray:nth-child(1) {
+  margin-right: 10px;
+}
+
+.fa-grip-lines {
+  align-self: center;
+  padding: 0 5px;
+}
 /* MAIN STYLES END */
 
 /* RESPONSIVE */
 
 @media only screen and (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
   header {
     margin: 1em auto 0;
     padding: 1em;
@@ -272,7 +385,7 @@ nav a {
     padding: 1em;
   }
 
-  .main-nav {
+  .sec-nav , #line{
     display: none;
   }
 
