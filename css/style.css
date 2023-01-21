@@ -260,3 +260,56 @@ nav a {
 }
 
 /* MAIN STYLES END */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 1em auto 0;
+    padding: 1em;
+  }
+  .wrapper {
+    padding: 1em;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .big-text {
+    font-size: 3em;
+  }
+  
+  .hero {
+    height: 85vh;
+  }
+
+  .hero .big-text {
+    top: 25%;
+  }
+
+  .hero-copy {
+    position: relative;
+  }
+
+  .hero-copy h3 {
+    font-size: 2em;
+  }
+
+  .hero-copy h4 {
+    font-size: 1rem;
+  }
+
+  .hero-copy p {
+    margin-bottom: 16px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+  }
+
+  .color-picker {
+    flex-direction: row;
+  }
+}
+/* RESPONSIVE END*/
